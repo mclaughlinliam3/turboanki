@@ -95,7 +95,7 @@ def get_clip():
             raise ValueError("No image in clipboard")
     except Exception as e:
         # Show an error message if something goes wrong
-        messagebox.showerror("Error", f"Failed to paste image: {e}")
+        print(f"Failed to paste image: {e}")
         return None
         
 
